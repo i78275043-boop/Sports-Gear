@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SportZone Store</title>
+
+<style>
+body {font-family: Arial; background:#f5f5f5; margin:0;}
+h1 {text-align:center; padding:20px;}
+
+.container {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.card {
+  background:white;
+  padding:15px;
+  margin:15px;
+  border-radius:10px;
+  width:250px;
+  box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card img {width:100%; border-radius:10px;}
+
+.btn {
+  padding:10px;
+  background:#0ea5e9;
+  color:white;
+  border:none;
+  width:100%;
+  margin-top:5px;
+}
+
+.whatsapp {
+  background:#22c55e;
+  display:block;
+  text-align:center;
+  text-decoration:none;
+}
+
+.cart {
+  background:white;
+  padding:20px;
+  margin:20px;
+  border-radius:10px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🏪 SportZone Store</h1>
+
+<div class="container">
+
+<!-- Cricket Kit -->
+<div class="card">
+<img src="https://images.pexels.com/photos/3628912/pexels-photo-3628912.jpeg">
+<h3>Cricket Kit</h3>
+<p>$120</p>
+<button class="btn" onclick="addToCart('Cricket Kit',120)">Add to Cart</button>
+<a href="https://wa.me/9779849050080?text=I want to buy Cricket Kit for $120" class="btn whatsapp">Buy Now</a>
+</div>
+
+<!-- Cricket Bat -->
+<div class="card">
+<img src="https://images.pexels.com/photos/1661950/pexels-photo-1661950.jpeg">
+<h3>Cricket Bat</h3>
+<p>$25</p>
+<button class="btn" onclick="addToCart('Cricket Bat',25)">Add to Cart</button>
+<a href="https://wa.me/9779849050080?text=I want to buy Cricket Bat for $25" class="btn whatsapp">Buy Now</a>
+</div>
+
+<!-- Leather Ball -->
+<div class="card">
+<img src="https://images.pexels.com/photos/163452/cricket-ball-red-ball-163452.jpeg">
+<h3>Leather Ball</h3>
+<p>$10</p>
+<button class="btn" onclick="addToCart('Leather Ball',10)">Add to Cart</button>
+<a href="https://wa.me/9779849050080?text=I want to buy Leather Ball for $10" class="btn whatsapp">Buy Now</a>
+</div>
+
+<!-- Football -->
+<div class="card">
+<img src="https://images.pexels.com/photos/274506/pexels-photo-274506.jpeg">
+<h3>Football</h3>
+<p>$18</p>
+<button class="btn" onclick="addToCart('Football',18)">Add to Cart</button>
+<a href="https://wa.me/9779849050080?text=I want to buy Football for $18" class="btn whatsapp">Buy Now</a>
+</div>
+
+<!-- Football Shoes -->
+<div class="card">
+<img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg">
+<h3>Football Shoes</h3>
+<p>$40</p>
+<button class="btn" onclick="addToCart('Football Shoes',40)">Add to Cart</button>
+<a href="https://wa.me/9779849050080?text=I want to buy Football Shoes for $40" class="btn whatsapp">Buy Now</a>
+</div>
+
+<!-- Cricket Shoes -->
+<div class="card">
+<img src="https://images.pexels.com/photos/1103836/pexels-photo-1103836.jpeg">
+<h3>Cricket Shoes</h3>
+<p>$35</p>
+<button class="btn" onclick="addToCart('Cricket Shoes',35)">Add to Cart</button>
+<a href="https://wa.me/9779849050080?text=I want to buy Cricket Shoes for $35" class="btn whatsapp">Buy Now</a>
+</div>
+
+<!-- Badminton -->
+<div class="card">
+<img src="https://images.pexels.com/photos/800740/pexels-photo-800740.jpeg">
+<h3>Badminton Racket</h3>
+<p>$12</p>
+<button class="btn" onclick="addToCart('Badminton',12)">Add to Cart</button>
+<a href="https://wa.me/9779849050080?text=I want to buy Badminton Racket for $12" class="btn whatsapp">Buy Now</a>
+</div>
+
+<!-- Table Tennis -->
+<div class="card">
+<img src="https://images.pexels.com/photos/209977/pexels-photo-209977.jpeg">
+<h3>Table Tennis Set</h3>
+<p>$22</p>
+<button class="btn" onclick="addToCart('Table Tennis',22)">Add to Cart</button>
+<a href="https://wa.me/9779849050080?text=I want to buy Table Tennis Set for $22" class="btn whatsapp">Buy Now</a>
+</div>
+
+<!-- Basketball -->
+<div class="card">
+<img src="https://images.pexels.com/photos/358042/pexels-photo-358042.jpeg">
+<h3>Basketball</h3>
+<p>$20</p>
+<button class="btn" onclick="addToCart('Basketball',20)">Add to Cart</button>
+<a href="https://wa.me/9779849050080?text=I want to buy Basketball for $20" class="btn whatsapp">Buy Now</a>
+</div>
+
+<!-- Golf -->
+<div class="card">
+<img src="https://images.pexels.com/photos/132576/pexels-photo-132576.jpeg">
+<h3>Golf Club Set</h3>
+<p>$150</p>
+<button class="btn" onclick="addToCart('Golf',150)">Add to Cart</button>
+<a href="https://wa.me/9779849050080?text=I want to buy Golf Club for $150" class="btn whatsapp">Buy Now</a>
+</div>
+
+<!-- Dumbbells -->
+<div class="card">
+<img src="https://images.pexels.com/photos/416717/pexels-photo-416717.jpeg">
+<h3>Dumbbells</h3>
+<p>$25</p>
+<button class="btn" onclick="addToCart('Dumbbells',25)">Add to Cart</button>
+<a href="https://wa.me/9779849050080?text=I want to buy Dumbbells for $25" class="btn whatsapp">Buy Now</a>
+</div>
+
+<!-- Skipping Rope -->
+<div class="card">
+<img src="https://images.pexels.com/photos/4498606/pexels-photo-4498606.jpeg">
+<h3>Skipping Rope</h3>
+<p>$6</p>
+<button class="btn" onclick="addToCart('Skipping Rope',6)">Add to Cart</button>
+<a href="https://wa.me/9779849050080?text=I want to buy Skipping Rope for $6" class="btn whatsapp">Buy Now</a>
+</div>
+
+</div>
+
+<!-- CART -->
+<div class="cart">
+<h2>🛒 Your Cart</h2>
+<ul id="items"></ul>
+<p>Total: $<span id="total">0</span></p>
+<button class="btn" onclick="checkout()">Checkout & Pay</button>
+</div>
+
+<!-- PAYMENT -->
+<div class="cart">
+<h2>💳 Payment Options</h2>
+<p>eSewa: 9849050080</p>
+<p>Fonepay: 9849050080</p>
+<p>PayPal: yourpaypal@email.com</p>
+<p>Stripe: Contact on WhatsApp</p>
+</div>
+
+<script>
+let cart=[];
+
+function addToCart(name, price){
+cart.push({name,price});
+render();
+}
+
+function render(){
+let list=document.getElementById("items");
+let total=0;
+list.innerHTML="";
+cart.forEach(item=>{
+let li=document.createElement("li");
+li.innerText=item.name+" - $"+item.price;
+list.appendChild(li);
+total+=item.price;
+});
+document.getElementById("total").innerText=total;
+}
+
+function checkout(){
+if(cart.length===0){
+alert("Cart is empty!");
+return;
+}
+
+let msg="Order:%0A";
+cart.forEach(i=>{
+msg+=i.name+" - $"+i.price+"%0A";
+});
+
+let total=cart.reduce((sum,i)=>sum+i.price,0);
+msg+="%0ATotal: $"+total;
+
+window.open("https://wa.me/9779849050080?text="+msg);
+}
+</script>
+
+</body>
+</html>
